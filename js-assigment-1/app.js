@@ -82,11 +82,11 @@ var quantity = 5;
 document.write(visitorName+" ordered "+quantity+" "+productTitle+"(s) on XYZ Clothing store");
 
 
-#############
-# chapter 4 #
-#############
+//#############
+//# chapter 4 #
+//#############
 
-Tasks
+//Tasks
 
 //(1)
 var variable1,variable2,variable3;
