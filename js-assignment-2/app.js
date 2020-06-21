@@ -34,12 +34,6 @@ for(var i=0; i<=b.length; i++){
         break;
     }
 }
-for(var i=0; i<=b.length; i++){
-    if(b.charAt(i)==="i"){
-        document.write("String : "+b+"<br>"+"Character at index 'i' : "+i+"<br>")
-        break;
-    }
-}
 //(6)
 var userF = prompt("Enter your first name");
 var userL = prompt("Enter your last name");
@@ -74,19 +68,19 @@ var upperStr = str2.slice(0,1).toUpperCase();
 var lowerStr = str2.slice(1,str2.length).toLowerCase();
 document.write("User input : "+str2+"<br>");
 document.write("Title case : "+upperStr+lowerStr+"<br>");
-(12)
+//(12)
 var num = 35.36;
 var num2 = num.toString();
 document.write(num2.replace('.', '')+"<br>");
 //(13)
 var userNa = prompt("Enter your name")
 for (var i=0; i<userNa.length; i++) {
-     if (userNa.charCodeAt(i)===33 || userNa.charCodeAt(i)===44 || userNa.charCodeAt(i)===46 || userNa.charCodeAt(i)===64){
+     if (userNa.charCodeAt(i)==33 || userNa.charCodeAt(i)==44 || userNa.charCodeAt(i)==46 || userNa.charCodeAt(i)==64){
         alert("Please enter a valid username");
         break;
      }
 }    
-(14)
+//(14)
 var bakery = ["cake", "apple pie", "cookie", "chips", "patties"];
 var search = prompt("Welcome to ABC bakery. wHAT do you want to order sir/ma'am?").toLowerCase();
 var check = true;
@@ -122,9 +116,9 @@ for(var i=0; i<splitStr.length; i++){
 }
 // (17)
 var cityNa = prompt("Enter your city name");
-var cityIndex = cityNa.lastIndexOf();
+var cityIndex = cityNa.length;
 document.write("User input : "+cityNa+"<br>");
-document.write("Last character of input : "+cityNa.charAt(checkIndex)+"<br>");
+document.write("Last character of input : "+cityNa.charAt(cityIndex-1)+"<br>");
 //(18)
 var text1 = "The quick brown fox jumps over the lazy dog";
 var string = text1.toLowerCase();
@@ -137,7 +131,7 @@ document.write("There are "+count+" occurrences(s) of word 'the'<br>");
 //# chapter 26-30 #
 //#################
 
-Tasks
+// Tasks
 
 //(1)
 var no1 = +prompt("Enter a positive number","3.45214");
@@ -181,7 +175,7 @@ document.write("Random number between 1 and 100 : "+random+"<br>");
 //(7)
 var weight = prompt("Enter user weight");
 var weight2 = parseFloat(weight.replace(/[^\d\.]*/g, ''));
-document.write("The weight of user is : "+weight2+" kilograms");
+document.write("The weight of user is : "+weight2+" kilograms"+"<br>");
 //(8)
 var userGuess = +prompt("Enter a number between 1 to 10");
 var guess = Math.ceil(Math.random()*10);
@@ -194,10 +188,10 @@ else{
 
 
 //#################
-//# chapter 26-30 #
+//# chapter 31-34 #
 //#################
 
-Tasks
+// Tasks
 
 //(1)
 var todayDate = new Date();
@@ -216,7 +210,7 @@ alert("Today is : "+weekDays[today]);
 var now = new Date();
 var weekDays = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 var today = now.getDay();
-if(days[today]=='Sun' || weekDays[today]=='Sat'){
+if(weekDays[today]=='Sun' || weekDays[today]=='Sat'){
     alert("It's Fun day")
 }
 //(5)
@@ -328,10 +322,10 @@ greetUser(fNa, lNa);
 function sum(no1, no2){
     return no1+no2;
 }
-var no1 = +prompt("Enter first number name");
-var no2 = +prompt("Enter first number name");
+var no1 = +prompt("Enter first number");
+var no2 = +prompt("Enter second number");
 var sum = sum(no1, no2);
-document.write("Sum is "+sum);
+document.write("Sum is "+sum+"<br>");
 //(4)
 function calc(no1, no2, operator){
     if(operator==='+'){
@@ -350,27 +344,14 @@ function calc(no1, no2, operator){
         return no1%no2;
     }
 }
-var no1 = +prompt("Enter first number name");
-var opt = prompt("Enter operator name");
-var no2 = +prompt("Enter first number name");
+var no1 = +prompt("Enter first number");
+var opt = prompt("Enter operator");
+var no2 = +prompt("Enter first number");
 var cal = calc(no1, no2, opt)
-document.write("Calculated value is "+cal);
+document.write("Calculated value is "+cal+"<br>");
 //(5)
-function sumOfSquares(num) {
-    var i;
-
-    for (i=0; i<=num; i++){
-        var sum=0;
-        var i = i*i;
-        sum = i;
-}
-     document.write("The sum of squares for numbers up to and including "+num+"is "+sum);
-}
-var num = parseInt(prompt("Enter a number:"));
-sumOfSquares(num);
-//(6)
 function square(sqNo){
-    return sqNo*sqNos;
+    return sqNo*sqNo;
 }
 var sqNo = +prompt("Enter number");
 var re = square(sqNo);
@@ -414,9 +395,9 @@ var height = +prompt("Enter reactangle hieght");
 var calcRect = calcRectangle(width, height);
  document.write("Calculated rectangle area is "+calcRect+"<br>");
 //(10)
-function palindromeCheck(str){
-    var palindrome = str.toLowerCase().split('').reverse().join('');;
-    if(str.toLowerCase()=== palindrome){
+function palindromeCheck(str1){
+    var palindrome = str1.toLowerCase().split('').reverse().join('');;
+    if(str1.toLowerCase()=== palindrome){
         document.write(palindrome+" is palindrom word <br>");
     }
     else{
@@ -443,6 +424,7 @@ function longestWord(str){
             arr2 = arr[i];
         }
     }
+    document.write(str+"<br>");
     document.write(arr2+"<br>");
 }
 longestWord("Web Development Tutorial");
