@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div align="center">
+        <h3>Name : Ahtisham & Roll No : WM1808 </h3>
+    </div>
+    <div class="main">
+
+        <table>
+            <tr>
+                <th colspan="4">Calculator</th>
+            </tr>
+            <tr>
+                <td colspan="4"><input id="result" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button class="btn" onclick="clearResult()">C</button></td>
+                <td><button class="btn" onclick="removeNum()">&#171;</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="getInput('7')">7</button></td>
+                <td><button class="btn" onclick="getInput('8')">8</button></td>
+                <td><button class="btn" onclick="getInput('9')">9</button></td>
+                <td><button class="btn" onclick="getInput('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="getInput('4')">4</button></td>
+                <td><button class="btn" onclick="getInput('5')">5</button></td>
+                <td><button class="btn" onclick="getInput('6')">6</button></td>
+                <td><button class="btn" onclick="getInput('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="getInput('3')">3</button></td>
+                <td><button class="btn" onclick="getInput('2')">2</button></td>
+                <td><button class="btn" onclick="getInput('1')">1</button></td>
+                <td><button class="btn" onclick="getInput('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="getInput('.')">.</button></td>
+                <td><button class="btn" onclick="getInput('0')">0</button></td>
+                <td><button class="btn" onclick="displayResult()">=</button></td>
+                <td><button class="btn" onclick="getInput('+')">+</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
