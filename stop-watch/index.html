@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Name : Ahtisham Ansari, Roll No : WM1808</h3>
+    <div class="main">
+        <h2>Stop Watch</h2>
+        <div class="circle">
+         <div class="row">
+            <h1 id="min">0 </h1>
+            <h1>:</h1>
+            <h1 id="sec">0 </h1>
+            <h1>:</h1>
+            <h1 id="msec">0</h1>
+         </div>
+        </div>
+        <div class="buttons">
+            <button type="button" id="startBtn" onclick="Start()"><i class="fa fa-play fs" aria-hidden="true"></i></button>
+            <button type="button" id="stopBtn" onclick="Stop()" disabled><i class="fa fa-pause fs" aria-hidden="true"></i></button>
+            <button type="button" id="resetBtn" onclick="Reset()"><i class="fa fa-repeat fs" aria-hidden="true"></i></button>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
