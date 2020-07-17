@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a id="link" href="#" onclick="Link()" >Click</a>
+    <div>
+     <img src="images/image1.jpg" class="mimg" alt="mobile1" onclick="Msg()" />
+     <img src="images/image3.jpeg" class="mimg" alt="mobile2" onclick="Msg()" />
+     <img src="images/image4.jpg" class="mimg" alt="mobile3" onclick="Msg()" />
+     <img src="images/image1.jpg" class="mimg" alt="mobile4" onclick="Msg()" />
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>james</td>
+                <td>8</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>james</td>
+                <td>8</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>james</td>
+                <td>8</td>
+                <td><button onclick="Delete(this)">Delete</button></td> 
+            </tr>
+        </table>
+    </div>
+    <div>
+    <img id="myImg" src="images/day.jpg" alt="image" onmouseover="NightImg()" onmouseout="DayImg()" />
+    </div>
+    <div>
+        <input type="number" id="counter">
+        <br><br>
+        <button onclick="Inc()">Increase</button>
+        <button onclick="Dec()">Decrease</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="2">Sign Up</th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="number" id="num"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="pwd"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="pwd" onclick="UserDetail()" ></td>
+            </tr>
+        </table>
+        <div id="userDetail">
+        </div>
+    </div>
+    <div>
+        <p id="txtDetail">
+            Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+           <a href="javascript:void(0)" onClick="TextDetail();"><em>Click for more.</em></a>
+        </p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="2">Enter Student Detail</th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="stdName" required></td>
+            </tr>
+            <tr>
+                <td>Father Name:</td>
+                <td><input type="text" id="stdFNa" required></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td><input type="number" id="stdClass" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" id="stdAdd" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="btnSub" value="submit" onclick="StudentDetail()" ><input type="submit" id="btnUpdate" value="edit" onclick="UpdateDetail()"></td>
+            </tr>
+        </table>
+        <h3>Student Detail</h3>
+        <table id="stdDetail">
+            <tr>
+                <th>Id No</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Class</th>
+                <th>Address</th>
+            </tr>
+        
+        </table> 
+    </div>
+    <div>
+        <h2>Image Modal</h2>
+        <div>
+            <img id="mImg" src="images/4.png" onclick="OpenModel(this)" alt="image1" />
+            <img id="mImg" src="images/5.jpg" onclick="OpenModel(this)" alt="image2" />
+            <img id="mImg" src="images/10.jpg" onclick="OpenModel(this)" alt="image3" />
+            <img id="mImg" src="images/13.jpg" onclick="OpenModel(this)" alt="image3" />
+        </div>
+        <div id="myModal" class="modal">
+            <span onclick="CloseModel()" class="close" >&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+    <div>
+    <p id="myText">
+        Slow lorises are a group of several species of trepsirrhine primates whichmake up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals. Slow lorises are a group of several species of trepsirrhine primates whichmake up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. A rare trait among mammals.
+    </p>
+    <button id="zoomIn" onclick="ZoomIn() ">+</button>
+    <button id="zoomOut" onclick="ZoomOut() ">-</button>
+    </div>
+
+    <div>
+        <h1> DOM </h1>
+        <div id='form-content' class='content'>
+        <label for='first-name'>First Name</label>
+        <input type='text' id='first-name' />
+        <label for='last-name'>Last Name</label>
+        <input type='text' id='last-name' />
+        <label for='email'>Email</label>
+        <input type='text' id='email1' />
+        </div>
+        <div id='main-content' class='content'>
+        <p class='render'> First Name : Alex</p>
+        <p class='render' id='lastName'>Last Name: Bank</p>
+        <p class='render'> Email : alexbank@example.com</p>
+        <p class='render'> Country : Pakistan </p>
+        <p class='render'> contact : +92 300 1234567</p>
+        </div>
+        </div>
+        <hr>
+        <div id="myContent">
+
+        </div>
+        <hr>
+    
+    <script src="app.js"></script>
+</body>
+</html>
