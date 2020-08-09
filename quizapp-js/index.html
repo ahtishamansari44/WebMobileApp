@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ShowQuiz()">
+    <div class="main">
+        <div id="box" class="box">
+            <h1>Quiz</h1>
+            <h3 id="question">question</h3>
+            <form action="">
+            <label id="option">
+                <input type="radio" required name="option" value="" />
+            </label>
+            <label id="option">
+                <input type="radio" name="option" value="" required />
+            </label>
+            <label id="option">
+                <input type="radio" name="option" value="" required />
+            </label>
+            <label id="option">
+                <input type="radio" name="option" value="" required />
+            </label>
+        </form>
+        <button type="button" onclick="Next()">Next</button>
+
+        </div>
+
+        <div id="score-box" class="box">
+            <h2 id="score">fdfdf</h2>
+            <button type="button" onclick="PlayAgain()">Play Again</button>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
